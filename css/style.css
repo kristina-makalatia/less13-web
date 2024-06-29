@@ -1,32 +1,32 @@
 :root {
-    --mainColor: red;
-    --mainSize: 150px;
+  --mainColor: red;
+  --mainSize: 150px;
 }
 
 /* css grid */
 .grid-wraper {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: repeat(3, minmax(150px, 500px));
   gap: 30px;
 }
 .grid-wraper div {
-  background-color: lightblue;
+  background-color: yellow;
 }
 
 /* auto fill & auto fit */
-/* .grid-element {
-    background-color: yellow;
-    border:1px solid #000;
+.grid-element {
+  background-color: red;
+  border: 1px solid #000;
 }
 .grid-container {
-    display: grid;
+  display: grid;
 }
 .grid-container--fill {
-    grid-template-columns: repeat(auto-fill, minmax(50px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
 }
 .grid-container--fit {
-    grid-template-columns: repeat(auto-fit,minmax(50px,1fr));
-} */
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+}
 
 /* შემოკლებული ჩანაწერი */
 /* .grid-block {
@@ -38,7 +38,7 @@
 } */
 
 /* practice styles */
-/* .grid-wraper-practice {
+ .grid-wraper-practice {
     display: grid;
     grid-template-columns: repeat(auto-fit, 250px);
     gap: 40px 30px;
@@ -55,7 +55,7 @@
     width: 90%;
     margin: 0 auto;
     background-color: lightcoral;
-} */
+} 
 
 /* header styles */
 .ul-items {
@@ -89,7 +89,7 @@
   row-gap: 20px;
 }
 .box {
-  width:var(--mainSize);
+  width: var(--mainSize);
   height: var(--mainSize);
 }
 .box:nth-child(1) {
